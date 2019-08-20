@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css'
-import MoseContainer from './components/MoseContainer';
+import IntervalCounter from './components/IntervalCounter';
 
 
 
 function App() {
   return (
     <div className="App">
-      <MoseContainer />
+      <IntervalCounter />
      </div>
   );
 }
