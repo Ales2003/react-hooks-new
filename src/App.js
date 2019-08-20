@@ -4,7 +4,7 @@ import ClassCounter from './components/ClassCounter';
 import HoockCounter from './components/HoockCounter';
 import HoockCounterTwo from './components/HoockCounterTwo';
 import HoockCounerThree from './components/HoockCounerThree';
-
+import HoockCounerFor from './components/HoockCounerFor';
 function App() {
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App() {
      <HoockCounterTwo /> */}
 
 
-     <HoockCounerThree />
+     <HoockCounerFor />
     </div>
   );
 }
