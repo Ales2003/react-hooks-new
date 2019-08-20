@@ -6,13 +6,18 @@ class ClassCounter extends Component {
         super(props)
 
         this.state = {
-            count: 0
+            count: 0,
+            name: ''
         }
     }
     
     //replaced componentDidMount and componentDidUpdate
-    componentDidUpdate(){
-        document.title = 'Document was updated ' +  this.state.count + ' times'
+    componentDidUpdate(prevProps, prevState){
+        if(prevState.count !== this.state.count) {
+            console.log('Update doc title')
+            document.title = 'Document was updated ' +  this.state.count + ' times'
+        }
+        
     }
 
     incrementCount = () => {
@@ -24,6 +29,13 @@ class ClassCounter extends Component {
     render (){
         return (
             <div>
+                <input
+                    type = "text"
+                    value = {this.state.name}
+                    onChange = {e => {
+                        this.setState({name: e.target.value})
+                    }}
+                />
                 <button onClick = {this.incrementCount}>Count {this.state.count} </button>
             </div>
         );
