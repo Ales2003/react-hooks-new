@@ -16,6 +16,7 @@ function IntervalCounter() {
 
     return (
     <div>
+        <hr/>
         {count}
     </div>
     )
