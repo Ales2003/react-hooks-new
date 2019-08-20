@@ -10,7 +10,7 @@ function UseEffectHoockOne() {
     useEffect(()=>{
         console.log('useEffect => Update doc title')
         document.title = 'Document was updated ' +  count + ' times'
-    }, [name])
+    }, [count])
 
     return (
     <div>
