@@ -4,7 +4,7 @@ function IntervalCounter() {
     const [count, setCount] = useState(0)
     
     const tick = () => {
-        setCount(count + 1)
+        setCount(prevCount => prevCount + 1)
     }
     
     useEffect(() => {
@@ -12,7 +12,7 @@ function IntervalCounter() {
         return() => {
             clearInterval(interval)
         }    
-    }, [count])
+    }, [])
 
     return (
     <div>
