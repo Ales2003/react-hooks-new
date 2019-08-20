@@ -9,6 +9,11 @@ class ClassCounter extends Component {
             count: 0
         }
     }
+    
+    //replaced componentDidMount and componentDidUpdate
+    componentDidUpdate(){
+        document.title = 'Document was updated ' +  this.state.count + ' times'
+    }
 
     incrementCount = () => {
         this.setState({
