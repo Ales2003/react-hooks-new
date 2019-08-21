@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css'
-import ReduceCounterMultipleReducers from './components/ReduceCounterMultipleReducers';
+import CustomHookOne from './components/CustomHookOne';
+import CustomHookTwo from './components/CustomHookTwo';
 
 export const NameContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-        <ReduceCounterMultipleReducers />
+        <CustomHookOne />
+        <CustomHookTwo />
      </div>
   );
 }
