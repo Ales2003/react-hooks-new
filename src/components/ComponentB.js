@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {NameContext} from '../App'
+import { NameContext } from '../App'
 
 function ComponentB() {
     return (
